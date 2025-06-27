@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Menu Drop Down</title>
+</head>
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: black;
+
+        }
+
+        li{ float: left; }
+
+        li a, .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, dropdow:hover .dropbtn{
+            background-color: red;
+
+        }
+
+        li.dropdown{
+            display: inline-block;
+
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background: yellow;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px ragba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+
+        }
+
+        .dropdown-content a:hover{
+            background-color: pink;
+        }
+
+        .dropdow:hover .dropdown-content{
+            display: block;
+        }
+
+    </style>
+<body>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Novidade</a></li>
+        <li class="dropdow">
+            <a href="javascript:void(0)" class="dropbtn">dropdow</a>
+            <div class="dropdown-content">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+            </div>
+        </li>
+    </ul>
+
+    <h3>Menu tipo dropdow</h3>
+    <p>Passe o mouse sobre as menus</p>
+</body>
+</html>
